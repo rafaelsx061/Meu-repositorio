@@ -1,0 +1,77 @@
+#:kivy 2.0.0
+
+<PongBall>:
+    size: 50, 50
+    canvas:
+        Color:
+            rgba: self.color if hasattr(self, 'color') else (1, 1, 1, 1)
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<PongPaddle>:
+    size: 25, 200
+
+<PongGame>:
+    ball: ball
+    player1: player_left
+    player2: player_right
+
+    canvas:
+        Color:
+            rgba: 0, 0, 0, 1  # Fundo preto
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    # Pontuação Jogador 1
+    Label:
+        text: str(root.player1.score)
+        font_size: 50
+        color: 1, 1, 1, 1
+        pos: root.width / 4 - self.width / 2, root.height - 80
+
+    # Pontuação Jogador 2
+    Label:
+        text: str(root.player2.score)
+        font_size: 50
+        color: 1, 1, 1, 1
+        pos: root.width * 3 / 4 - self.width / 2, root.height - 80
+
+    # Bola
+    PongBall:
+        id: ball
+        center: root.center
+
+    # Raquete esquerda (verde)
+    PongPaddle:
+        id: player_left
+        x: root.x
+        y: root.center_y - self.height / 2
+        canvas:
+            Color:
+                rgba: 0, 1, 0, 1  # Verde
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+    # Raquete direita (azul)
+    PongPaddle:
+        id: player_right
+        x: root.width - self.width
+        y: root.center_y - self.height / 2
+        canvas:
+            Color:
+                rgba: 0, 0, 1, 1  # Azul
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+    # Frase de vitória
+    Label:
+        text: root.winner_text
+        font_size: 40
+        color: 1, 1, 0, 1  # Amarelo
+        size_hint: None, None
+        size: self.texture_size
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
