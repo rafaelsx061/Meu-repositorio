@@ -123,8 +123,8 @@ São programas que rodam no computador, direto no sistema operacional.
 
 ---
 
-Com iniciar os projetos:
-Agora vou ensinar o passo a passo de como rodar os projetos
+### 📌 Como iniciar os projetos:
+### Agora vou ensinar o passo a passo de como rodar os projetos, segue o tutorial abaixo:
 
 📌 Python:
 Instale o Python:
