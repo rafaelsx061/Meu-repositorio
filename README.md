@@ -121,18 +121,3 @@ São programas que rodam no computador, direto no sistema operacional.
 | Performance          | Média           | Alta             | Média |
 | Compatibilidade      | Todos os navegadores | Depende do SO | Depende da plataforma |
 
----
-
-## 📝 Conclusão
-Cada ambiente de desenvolvimento tem seu papel:
-- **Web:** Fácil acesso e manutenção (ex.: nossa loja online em Django)
-- **Desktop:** Melhor desempenho e uso offline
-- **Mobile:** Experiência personalizada no celular (ex.: nosso app de lista de filmes)
-
-Ter desenvolvido **dois projetos reais** (Django + Kivy) nos ajudou a entender como cada plataforma funciona na prática.
-
----
-
-## 👥 Membros do Grupo
-- Coloque aqui os nomes dos integrantes do grupo
-
