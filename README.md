@@ -127,24 +127,24 @@ São programas que rodam no computador, direto no sistema operacional.
 ### Agora vou ensinar o passo a passo de como rodar os projetos, segue o tutorial abaixo:
 
 📌 Python:
-Instale o Python:
+- Instale o Python:
 pip install Python
 
-Criar e ativar um ambiente virtual:
+- Criar e ativar um ambiente virtual:
 python -m venv .venv
 .\.venv\Scripts\activate
 
-Se for no macOS/Linux fica:
+- Se for no macOS/Linux fica:
 python3 -m venv .venv
 source .venv/bin/activate
 
 📌 Django:
 Rodar o projeto Django que é o Web:
 
-Instale o django:
+- Instale o django:
 pip install django
 
-Criar projeto/app:
+- Criar projeto/app:
 django-admin startproject loja
 cd loja
 python manage.py startapp catalog
@@ -152,19 +152,20 @@ python manage.py startapp catalog
 📌 Kivy:
 Rodar o projeto Kivy:
 
-Navegue até a pasta do seu projeto Kivy:
+- Navegue até a pasta do seu projeto Kivy:
 cd caminho/para/seu/projeto
 
-Ativar o ambiente virtual: 
+- Ativar o ambiente virtual: 
 .\.venv\Scripts\activate
 
-Instale o kivy:
+- Instale o kivy:
 pip install kivy
 
-Criar um arquivo: 
+- Criar um arquivo: 
 Main.py
 Depois disso você já pode criar seu código, primeiro importando as funções já.
-Ex: From kivy.app import App
+
+- Ex: From kivy.app import App
 From kivy.uix.button import Button
 
 
